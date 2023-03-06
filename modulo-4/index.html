@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h1>CALCULATOR</h1>
+    <input type="number" id="A" />
+    <input type="number" id="B" />
+    <button
+      onclick="sum(document.getElementById('A').value, document.getElementById('B').value)"
+    >
+      sum
+    </button>
+    <button
+      onclick="rest(document.getElementById('A').value, document.getElementById('B').value)"
+    >
+      rest
+    </button>
+    <button
+      onclick="mult(document.getElementById('A').value, document.getElementById('B').value)"
+    >
+      multiply
+    </button>
+    <button
+      onclick="div(document.getElementById('A').value, document.getElementById('B').value)"
+    >
+      divide
+    </button>
+
+    <p id="result"></p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
